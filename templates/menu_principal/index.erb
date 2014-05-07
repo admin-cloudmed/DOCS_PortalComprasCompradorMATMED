@@ -1,0 +1,202 @@
+<center>
+   <h1><%= I18n.t("menu_principal.index.title") %></h1>
+</center>
+<p class="more-info"><%= I18n.t("general.updated_at", :date => "07/11/2013") %></p>
+<h3><%= I18n.t("general.index") %></h3>
+
+
+<!--Indice -->
+<div class="metro-surface">
+   <center>
+	   <table>
+		  <tr>
+			 <td>
+				<a href="#menu_principal_inner">
+				   <div class="metro-tile metro-tile-small  "><%= I18n.t("menu_principal.index.table_of_contents.menu_principal") %></div>
+				</a>
+			 </td>
+			 <td>
+				<a href="#dashboard_inner">
+				   <div class="metro-tile "><%= I18n.t("menu_principal.index.table_of_contents.menu_principal_dashboard") %></div>
+				</a>
+			 </td>
+			 <td>
+				<a href="#solicitar_opme_inner">
+				   <div class="metro-tile "><%= I18n.t("menu_principal.index.table_of_contents.menu_principal_solicitar_opme") %></div>
+				</a>
+			 </td>
+		  </tr>
+	   </table>
+	   <table>
+      <tr>
+         <td>
+            <a href="#menu_principal_orcamentos_inner">
+               <div class="metro-tile "><%= I18n.t("menu_principal.index.table_of_contents.menu_principal_orcamentos") %></div>
+            </a>
+         </td>
+         <td>
+            <a href="#menu_principal_relatorios_inner">
+               <div class="metro-tile metro-tile-small  "></div>
+            </a>
+         </td>
+         <td>
+            <a href="#menu_principal_configuracoes_inner">
+               <div class="metro-tile "><%= I18n.t("menu_principal.index.table_of_contents.menu_principal_configuracoes") %></div>
+            </a>
+         </td>
+      </tr>
+   </table>
+   </center>
+</div>
+
+
+<!--Menu Principal -->
+<div id ="menu_principal" > &nbsp </div>
+<h2 id="menu_principal_inner"><%= I18n.t("menu_principal.index.table_of_contents.menu_principal") %></h2>
+<div class="row-fluid">
+   <p style="text-indent: 3em; text-align: justify;"> <%= I18n.t("menu_principal.index.menu_principal.item_1") %></p>
+   <center><img src="/img/menu_principal/menu_principal.png"  /></center>
+   <p align="right" style="font-weight:bold;"><%= I18n.t("menu_principal.index.menu_principal.item_2") %></p>
+</div>
+
+
+
+<!--Menu Principal > Dashboard-->
+<div id ="dashboard" > &nbsp </div>
+<h2 id="dashboard_inner"><%= I18n.t("menu_principal.index.table_of_contents.menu_principal_dashboard") %></h2>
+<div class="row-fluid">
+   <p style="text-indent: 3em; text-align: justify;"> <%= I18n.t("menu_principal.index.menu_principal_dashboard.item_1") %></p>
+   <center><img src="/img/menu_principal/menu_principal_dashboard.png" /></center>
+   <p align="right" style="font-weight:bold;"><%= I18n.t("menu_principal.index.menu_principal_dashboard.item_2") %></p>
+   <div class="metro-surface">
+	   <center>
+		   <table>
+			  <tr>
+				 <td>
+					<a href="understanding_the_system#dashboard">
+						<div class="metro-tile-fluxo  metro-tile-teal"><%= I18n.t("menu_principal.index.menu_principal_dashboard.item_3") %></div>
+					</a>
+				 </td>
+			  </tr>
+		   </table>
+		</center>
+	</div>
+</div>
+
+
+
+<!--Menu Principal > Solicitar OPME-->
+<div id ="solicitar_opme" > &nbsp </div>
+<h2 id="solicitar_opme_inner"><%= I18n.t("menu_principal.index.table_of_contents.menu_principal_solicitar_opme") %></h2>
+<div class="row-fluid">
+   <p style="text-indent: 3em; text-align: justify;"> <%= I18n.t("menu_principal.index.menu_principal_solicitar_opme.item_1") %></p>
+   <center><img src="/img/menu_principal/menu_principal_solicitar.png" /></center>
+   <p align="right" style="font-weight:bold;"><%= I18n.t("menu_principal.index.menu_principal_solicitar_opme.item_2") %></p>
+   <div class="metro-surface">
+	   <center>
+		   <table>
+			  <tr>
+				 <td>
+					<a href="solicitar_opme#index">
+						<div class="metro-tile-fluxo   metro-tile-teal"><%= I18n.t("menu_principal.index.menu_principal_solicitar_opme.item_3") %></div>
+					</a>
+				 </td>
+			  </tr>
+		   </table>
+		</center>
+	</div>
+</div>
+
+<!--Menu Principal > Pedidos -->
+<div id ="menu_principal_orcamentos" > &nbsp </div>
+<h2 id="menu_principal_orcamentos_inner"><%= I18n.t("menu_principal.index.table_of_contents.menu_principal_orcamentos") %></h2>
+<div class="row-fluid">
+   <center><img src="/img/menu_principal/menu_principal_orcamentos.png" /></center>
+   <p align="right" style="font-weight:bold;"><%= I18n.t("menu_principal.index.menu_principal_orcamentos.item_11") %></p>
+   <p style="text-indent: 3em; text-align: justify;"> <%= I18n.t("menu_principal.index.menu_principal_orcamentos.item_1") %></p>
+  <div class="metro-surface">
+   <center>
+      <table>
+         <tr>
+            <td>
+               <a href="orcamentos#localizar">
+                  <div class="metro-tile  metro-tile-teal"><%= I18n.t("orcamentos.index.table_of_contents.localizar") %></div>
+               </a>
+            </td>
+            <td>
+               <a href="orcamentos#faturados">
+                  <div class="metro-tile metro-tile-small metro-tile-teal"><%= I18n.t("orcamentos.index.table_of_contents.faturados") %></div>
+               </a>
+            </td>
+            <td>
+               <a href="orcamentos#cancelado">
+                  <div class="metro-tile metro-tile-teal"><%= I18n.t("orcamentos.index.table_of_contents.cancelado") %></div>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <table>
+         <tr>
+            <td>
+               <a href="orcamentos#concluidos">
+                  <div class="metro-tile  metro-tile-teal"><%= I18n.t("orcamentos.index.table_of_contents.concluidos") %></div>
+               </a>
+            </td>
+            <td>
+               <a href="orcamentos#pendentes_fornecedor">
+                  <div class="metro-tile metro-tile-teal "><%= I18n.t("orcamentos.index.table_of_contents.pendentes_fornecedor") %></div>
+               </a>
+            </td>
+            <td>
+               <a href="orcamentos#abertos">
+                  <div class="metro-tile metro-tile-small metro-tile-teal"><%= I18n.t("orcamentos.index.table_of_contents.abertos") %></div>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </center>
+</div>
+</div>
+
+
+<!--Menu Principal > Configurações -->
+<div id ="menu_principal_configuracoes" > &nbsp </div>
+<h2 id="menu_principal_configuracoes_inner"><%= I18n.t("menu_principal.index.table_of_contents.menu_principal_configuracoes") %></h2>
+<div class="row-fluid">
+   <center><img src="/img/menu_principal/menu_principal_configuracoes.png" /></center>
+   <p align="right" style="font-weight:bold;"><%= I18n.t("menu_principal.index.menu_principal_configuracoes.item_10") %></p>
+   <p style="text-indent: 3em; text-align: justify;"> <%= I18n.t("menu_principal.index.menu_principal_configuracoes.item_1") %></p>
+	<div class="metro-surface">
+   <center>
+      <table>
+         <tr>
+            <td>
+               <a href="configuracoes#meus_dados">
+                  <div class="metro-tile    metro-tile-teal"><%= I18n.t("configuracoes.index.table_of_contents.meus_dados") %></div>
+               </a>
+            </td>
+            <td>
+               <a href="configuracoes#lista_produtos">
+                  <div class="metro-tile metro-tile-teal"><%= I18n.t("configuracoes.index.table_of_contents.lista_produtos") %></div>
+               </a>
+            </td>
+            <td>
+               <a href="configuracoes#pesquisa_forncedor">
+                  <div class="metro-tile  metro-tile-teal"><%= I18n.t("configuracoes.index.table_of_contents.pesquisa_forncedor") %></div>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </center>
+</div>
+
+	
+</div>
+
+
+
+<!--Botões -->
+<ul class="pager">
+   <li class="previous"><%= link_to("&larr; " + I18n.t("understanding_the_system.index.title"), "understanding_the_system") %></li>
+   <li class="next"><%= link_to(I18n.t("acoes_disponiveis.index.title") + " &rarr;", "acoes_disponiveis") %></li>
+</ul>
